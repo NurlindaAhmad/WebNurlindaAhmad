@@ -1,0 +1,82 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+    
+}
+.logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5px; /* Sesuaikan dengan kebutuhan Anda */
+        }
+
+        .logo {
+            width: 130px; /* Sesuaikan dengan lebar yang diinginkan */
+            height: auto;
+            border-radius: 50%;
+        }
+
+header {
+    background-color: #ffb7d5;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    background-color: #ff6397;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container {
+    background-color: #ffb7d5;
+    max-width: 2200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.product,
+.contact,
+.address {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.menu-link {
+    cursor: pointer;
+    color: #fff7f7;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.product img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 5px;
+    
+}
+
+.product-info {
+    text-align: center;
+}
+
+.contact p {
+    margin-bottom: 10px;
+}

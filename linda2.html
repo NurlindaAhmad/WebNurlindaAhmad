@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="linda2.css">
+    <title>tokoh Baju</title>
+    <link rel="shortcut icon" type="image/png" href="logoku1.png">
+</head>
+<body>
+</head>
+<body>
+    <!-- ini tag kepala -->
+    <header>
+        <div class="logo-container">
+            <img class="logo" src="LOGOKU.jpeg" alt="Logo Tokoh">
+        </div>
+        <h1>Lin Fashion</h1>
+        <p>Ig : _linsecc</p>
+    </header>
+    <!-- end kepala -->
+    <!-- ini navbar -->
+    <nav>
+        <a class="menu-link" onclick="showContent('product')">Produk</a>
+        <a class="menu-link" onclick="showContent('contact')">Kontak</a>
+        <a class="menu-link" onclick="showContent('address')">Alamat</a>
+    </nav>
+    <!-- end navbar -->
+<!-- ini content isi /web -->
+    <div class="container">
+        <div class="product active">
+            <h2>Produk</h2>        
+            <h2 style="text-align: center;" >SELAMAT DATANG DI TOKOH FASHION ONLINE KAMI</h2>
+            <div class="product-info">
+                <img src="baju1.jpeg" alt="Produk 1">
+                <p>Nama Produk 1</p>
+                <p>Deskripsi Produk 1</p>
+                <p>Harga: $100</p>
+            </div>
+
+            <div class="product-info">
+                <img src="baju2.jpeg" alt="Produk 2">
+                <p>Nama Produk 2</p>
+                <p>Deskripsi Produk 2</p>
+                <p>Harga: $120</p>
+            </div>
+
+            <div class="product-info">
+                <img src="baju3.jpeg" alt="Produk 3">
+                <p>Nama Produk 3</p>
+                <p>Deskripsi Produk 3</p>
+                <p>Harga: $80</p>
+            </div>
+
+            <div class="product-info">
+                <img src="baju4.jpeg" alt="Produk 4">
+                <p>Nama Produk 4</p>
+                <p>Deskripsi Produk 4</p>
+                <p>Harga: $150</p>
+            </div>
+
+            <div class="product-info">
+                <img src="baju5.jpeg" alt="Produk 5">
+                <p>Nama Produk 5</p>
+                <p>Deskripsi Produk 5</p>
+                <p>Harga: $90</p>
+            </div>
+
+            <div class="product-info">
+                <img src="baju6.jpeg" alt="Produk 6">
+                <p>Nama Produk 6</p>
+                <p>Deskripsi Produk 6</p>
+                <p>Harga: $110</p>
+            </div>
+        </div>
+<!-- ini kontak isi dr div class contac -->
+        <div class="contact">
+            <h2>Kontak</h2>
+            <p>Email: example@example.com</p>
+            <p>Telepon: +62 853-4565-6863</p>
+            <button onclick="kirimPesanWhatsApp()">Chat dengan Kami</button>
+            <!-- ini script js untuk menganktifkan wa langsung masuk ke wa -->
+            <script>
+                function kirimPesanWhatsApp() {
+                    var pesan = "Halo, saya ingin menanyakan sesuatu.";
+                    var nomorAdmin = "+62 853-4565-6863";
+                    var linkWhatsApp = "https://api.whatsapp.com/send?phone=" + nomorAdmin + "&text=" + encodeURIComponent(pesan);
+                    window.open(linkWhatsApp);
+                }
+            </script>
+        </div>
+
+        <div class="address">
+            <h2>Alamat</h2>
+            <p>Jl.Ki Hajar Dewantoro</p>
+            <p>Lembang Majene, Sulawesi Barat</p>
+        </div>
+    </div>
+
+    <script>
+        function showContent(content) {
+            const contents = ['product', 'contact', 'address'];
+
+            contents.forEach(item => {
+                const element = document.querySelector(`.${item}`);
+                element.classList.remove('active');
+            });
+
+            const activeElement = document.querySelector(`.${content}`);
+            activeElement.classList.add('active');
+        }
+    </script>
+
+</body>
+</html>   
+
+
